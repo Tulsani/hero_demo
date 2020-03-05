@@ -1,0 +1,55 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="Details text-center" >
+            <h1>Enter the details of the Vehicle here:</h1>
+            <h3>TrackID</h3>
+            <input id="trackid" placeholder="Track Id"></input>
+            <h3>Name</h3>
+            <input id="cusname" placeholder="John Doe"></input>
+            <h3>Vehicle</h3>
+            <input id="cusvehicle" placeholder="Pulsar"></input>
+            <h3>Status</h3>
+            <input id="status" placeholder="WorkShop"></input>
+            <br><br>
+            <button class="btn btn-primary" onclick="addStore()">Add New Customer</button>
+        </div>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1hF0LKg7xHgmWj2PIFsF65lJyMvAeXUE",
+    authDomain: "hero-mvp-service.firebaseapp.com",
+    databaseURL: "https://hero-mvp-service.firebaseio.com",
+    projectId: "hero-mvp-service",
+    storageBucket: "hero-mvp-service.appspot.com",
+    messagingSenderId: "377805984558",
+    appId: "1:377805984558:web:90857f665e9b83b633a0bf",
+    measurementId: "G-ELJM7XL7X0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+    </body>
+</html>

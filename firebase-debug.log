@@ -1,0 +1,166 @@
+[debug] [2020-03-05T06:15:00.978Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T06:15:00.980Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-03-05T06:15:00.980Z] CLI Version:   7.14.0
+[debug] [2020-03-05T06:15:00.980Z] Platform:      linux
+[debug] [2020-03-05T06:15:00.980Z] Node Version:  v8.13.0
+[debug] [2020-03-05T06:15:00.980Z] Time:          Thu Mar 05 2020 11:45:00 GMT+0530 (IST)
+[debug] [2020-03-05T06:15:00.980Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T06:15:00.980Z] 
+[debug] [2020-03-05T06:15:00.987Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-05T06:15:00.987Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/akshat/Documents/Hero_service
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-03-05T06:16:40.953Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-05T06:16:40.958Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-05T06:16:41.585Z] <<< HTTP RESPONSE 400
+[debug] [2020-03-05T06:16:41.590Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-03-05T06:16:43.562Z] <<< HTTP RESPONSE 401
+[debug] [2020-03-05T06:16:43.562Z] <<< HTTP RESPONSE BODY
+[debug] [2020-03-05T06:16:43.567Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-03-05T06:16:44.204Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:219:9)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
+[debug] [2020-03-05T06:16:53.676Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T06:16:53.678Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-03-05T06:16:53.678Z] CLI Version:   7.14.0
+[debug] [2020-03-05T06:16:53.678Z] Platform:      linux
+[debug] [2020-03-05T06:16:53.678Z] Node Version:  v8.13.0
+[debug] [2020-03-05T06:16:53.679Z] Time:          Thu Mar 05 2020 11:46:53 GMT+0530 (IST)
+[debug] [2020-03-05T06:16:53.679Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T06:16:53.679Z] 
+[debug] [2020-03-05T06:16:53.682Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-05T06:16:53.682Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/akshat/Documents/Hero_service
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-03-05T06:17:08.671Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-05T06:17:08.672Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-05T06:17:09.292Z] <<< HTTP RESPONSE 400
+[debug] [2020-03-05T06:17:09.297Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-03-05T06:17:10.358Z] <<< HTTP RESPONSE 401
+[debug] [2020-03-05T06:17:10.359Z] <<< HTTP RESPONSE BODY
+[debug] [2020-03-05T06:17:10.364Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-03-05T06:17:10.956Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:219:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-03-05T09:43:49.506Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T09:43:49.508Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-03-05T09:43:49.508Z] CLI Version:   7.14.0
+[debug] [2020-03-05T09:43:49.508Z] Platform:      linux
+[debug] [2020-03-05T09:43:49.508Z] Node Version:  v8.13.0
+[debug] [2020-03-05T09:43:49.508Z] Time:          Thu Mar 05 2020 15:13:49 GMT+0530 (IST)
+[debug] [2020-03-05T09:43:49.508Z] ----------------------------------------------------------------------
+[debug] [2020-03-05T09:43:49.508Z] 
+[debug] [2020-03-05T09:43:49.512Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-05T09:43:49.512Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/akshat/Documents/Hero_service
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-03-05T09:43:59.438Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-05T09:43:59.438Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-05T09:44:00.062Z] <<< HTTP RESPONSE 400
+[debug] [2020-03-05T09:44:00.067Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-03-05T09:44:00.777Z] <<< HTTP RESPONSE 401
+[debug] [2020-03-05T09:44:00.777Z] <<< HTTP RESPONSE BODY
+[debug] [2020-03-05T09:44:00.782Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-03-05T09:44:01.186Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:139:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:219:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

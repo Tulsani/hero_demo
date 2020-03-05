@@ -1,0 +1,56 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script src="jquery-3.4.1.min.js"></script>
+    </head>
+    <body onload="retriever()">
+
+            <h3 class="text-center table-striped align-middle">CUSTOMER LIST</h3>
+            <table style="margin: auto;" class="text-center table-striped align-middle" id="tbl_users_list" border="1">
+            <tr>
+                <thead>
+                <td>TrackID</td>
+                <td>Owner Name</td>
+                <td>Status</td>
+            </thead>
+            <tbody id="values">
+            
+            </tbody>
+                
+            </tr>
+            </table>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1hF0LKg7xHgmWj2PIFsF65lJyMvAeXUE",
+    authDomain: "hero-mvp-service.firebaseapp.com",
+    databaseURL: "https://hero-mvp-service.firebaseio.com",
+    projectId: "hero-mvp-service",
+    storageBucket: "hero-mvp-service.appspot.com",
+    messagingSenderId: "377805984558",
+    appId: "1:377805984558:web:90857f665e9b83b633a0bf",
+    measurementId: "G-ELJM7XL7X0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+<script src="retriever.js"></script>
+    </body>
+</html>
