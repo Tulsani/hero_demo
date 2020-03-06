@@ -8,6 +8,21 @@
             <!-- Latest compiled JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <script src="jquery-3.4.1.min.js"></script>
+            <script>
+              var time = new Date().getTime();
+              $(document.body).bind("mousemove keypress", function(e) {
+                  time = new Date().getTime();
+              });
+         
+              function refresh() {
+                  if(new Date().getTime() - time >= 60000/2) 
+                      window.location.reload(true);
+                  else 
+                      setTimeout(refresh, 10000/2);
+              }
+         
+              setTimeout(refresh, 10000/2);
+         </script>
     </head>
     <body onload="retriever()">
             <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
@@ -30,12 +45,12 @@
                           </div>
                   </nav>
 
-            <h3 class="text-center table-striped align-middle">CUSTOMER LIST</h3>
+            <h3 class="text-center table-striped align-middle">SERVICE VEHICLE TRACKING</h3>
             <table style="margin: auto;" class="text-center table-striped align-middle" id="tbl_users_list" border="1">
             <tr>
                 <thead>
                 <td>TrackID</td>
-                <td>Owner Name</td>
+                <!-- <td>Owner Name</td> -->
                 <td>Status</td>
             </thead>
             <tbody id="values">
