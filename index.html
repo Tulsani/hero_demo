@@ -36,9 +36,37 @@
             <h3>Name</h3>
             <input id="cusname" placeholder="John Doe"></input>
             <h3>Vehicle</h3>
-            <input id="cusvehicle" placeholder="Pulsar"></input>
+            <!-- <input id="cusvehicle" placeholder="Pulsar"></input> -->
+            <select id="ddlVehicle" class="browser-default custom-select">
+              <option value="0">           </option>
+              <option value="1">Pleasure +</option>
+              <option value="2">Maestro Edge 125</option>
+              <option value="3">Maestro Edge</option>
+              <option value="4">Duet</option>
+              <option value="5">POLISHING</option>
+              <option value="6">HF deluxe</option>
+              <option value="7">Splendor+</option>
+              <option value="8">Splendor iSmart</option>
+              <option value="9">Passion</option>
+              <option value="10">Super Splendor</option>
+              <option value="11">Glamour</option>
+              <option value="12">Xtreme 200S</option>
+              <option value="13">Xtreme 200R</option>
+              <option value="14">Xtreme 160R</option>
+              <option value="15">Xpulse 200T</option>
+              <option value="16">Xpulse 200</option>
+            </select>
             <h3>Status</h3>
-            <input id="status" placeholder="WorkShop"></input>
+            <!-- <input id="status" placeholder="WorkShop"></input> -->
+            <select id="ddlViewBy" class="browser-default custom-select">
+                <option value="0">           </option>
+              <option value="1">Job Card Preparation</option>
+              <option value="2">Washing</option>
+              <option value="3">WorkShop</option>
+              <option value="4">FI AND PUC</option>
+              <option value="5">POLISHING</option>
+              <option value="6">BILLING AND DELIEVERY</option>
+            </select>
             <br><br>
             <button class="btn btn-primary" onclick="addStore()">Add New Customer</button>
         </div>

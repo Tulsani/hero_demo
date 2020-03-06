@@ -34,7 +34,16 @@
             <h3>TrackID</h3>
             <input id="trackid" placeholder="Track Id"></input>
             <h3>Update Status</h3>
-            <input id="status" placeholder="WorkShop"></input>
+            <!-- <input id="status" placeholder="WorkShop"></input> -->
+            <select id="ddlViewBy" class="browser-default custom-select">
+              <option value="0">             </option>
+              <option value="1">Job Card Preparation</option>
+              <option value="2">Washing</option>
+              <option value="3">WorkShop</option>
+              <option value="4">FI AND PUC</option>
+              <option value="5">POLISHING</option>
+              <option value="6">BILLING AND DELIEVERY</option>
+            </select>
             <br><br>
             <button class="btn btn-primary" onclick="updateStore()">Update Status</button>
         </div>

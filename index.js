@@ -5,8 +5,14 @@ function reload_page()
 function addStore(){
     var trackid = document.getElementById("trackid").value;
     var cusname = document.getElementById("cusname").value;
-    var cusvehicle = document.getElementById("cusvehicle").value;
-    var status = document.getElementById("status").value;
+    // var cusvehicle = document.getElementById("cusvehicle").value;
+    // var status = document.getElementById("status").value;
+
+    var e = document.getElementById("ddlViewBy");
+    var strUser = e.options[e.selectedIndex].text;
+
+    var e = document.getElementById("ddlVehicle");
+    var cusvehicle = e.options[e.selectedIndex].text;
 
     
     var rootRef = firebase.database().ref();
@@ -16,7 +22,7 @@ function addStore(){
     "tid":trackid,
     "name":cusname,
     "vehicle":cusvehicle,
-    "stat":status
+    "stat":strUser
     },(err)=>{
         if(err){
             console.log("unable to send data");
