@@ -7,7 +7,10 @@ function addStore(){
     // var cusname = document.getElementById("cusname").value;
     // var cusvehicle = document.getElementById("cusvehicle").value;
     // var status = document.getElementById("status").value;
-
+	if(trackid == "" || trackid == null){
+	window.alert("enter a unique token no.");
+	}
+    else{	
     var e = document.getElementById("ddlViewBy");
     var strUser = e.options[e.selectedIndex].text;
 
@@ -33,4 +36,5 @@ function addStore(){
             alert("Added new Customer");
         }
     });
+    }
   }
