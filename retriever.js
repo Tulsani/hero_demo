@@ -11,10 +11,32 @@ function retriever(){
         if(status=="END"){
             deleter_three(tid);
         }
+        switch(status){
+            case "Job Card Preparation":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#FCF3CF'>In Progress</td><td> No </td><td> No </td><td> No </td><td> No </td><td> No </td></tr>");
+                break;
+            case "Washing":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#D5F5E3'>Done</td><td bgcolor='#FCF3CF'> In Progress </td><td> No </td><td> No </td><td> No </td><td> No </td></tr>");
+                break;
+            case "WorkShop":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#D5F5E3'>Done</td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#FCF3CF'> In progress </td><td> No </td><td> No </td><td> No </td></tr>");
+                break;
+            case "FI AND PUC":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#D5F5E3'>Done</td><td bgcolor='#D5F5E3'> Dooe </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#FCF3CF'> In Progress </td><td> No </td><td> No </td></tr>");
+                break;
+            case "POLISHING":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#D5F5E3'>Done</td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#FCF3CF'> In Progress </td><td> No </td></tr>");
+                break;
+            case "BILLING AND DELIEVERY":
+                $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td><td bgcolor='#D5F5E3'>Done</td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#D5F5E3'> Done </td><td bgcolor='#FCF3CF'> In Progress </td></tr>");
+                break;
+            default:
+                console.log("error");
+        }
         
         // var table = document.getElementById("values");
         // table.append("<tr><td>"+ tid +"</td><td>"+ name +"</td><td>" + status + "</td></tr>")
-        $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td></tr>");
+        // $("#values").append("<tr><td>"+ tid +"</td><td>" + status + "</td></tr>");
         
     });
 }
