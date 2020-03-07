@@ -31,9 +31,9 @@ function addStore(){
             console.log("unable to send data");
         }
         else{
-            console.log("sent successfully");
-            reload_page();  
+            console.log("sent successfully"); 
             alert("Added new Customer");
+            reload_page(); 		 
         }
     });
     }
