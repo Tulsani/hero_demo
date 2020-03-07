@@ -11,6 +11,10 @@ function updateStore(){
 
     var trackid = document.getElementById("trackid").value; 
     // var status = document.getElementById("status").value;
+    if(trackid=="" || trackid == null){
+    window.alert("enter token number to be updated");
+    }
+    else{	
     var db = firebase.database();
 
     var query= db.ref().child("app/customer").orderByChild("tid").equalTo(trackid);
@@ -32,6 +36,7 @@ function updateStore(){
 // else{
 //     console.log("not done");
 // }
+    }
 }
 
 function reload_page()
