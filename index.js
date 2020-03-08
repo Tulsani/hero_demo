@@ -3,6 +3,7 @@ function reload_page()
     window.location.reload();
     
 }
+setInterval(retriever, 12000);
 var arr = [""];
 
 function addStore(){
