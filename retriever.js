@@ -8,7 +8,7 @@ function retriever(){
         var tid = snap.child("tid").val();
         var status = snap.child("stat").val();
         console.log(name+" "+tid+" "+status);
-    if(count<31){
+    if(count<45){
         if(status=="END"){
             deleter_three(tid);
         }
@@ -97,3 +97,4 @@ function deleter_three(tokenid){
     var query= db.ref().child("app/customer").orderByChild("tid").equalTo(tokenid);
     query.remove();
 }
+
