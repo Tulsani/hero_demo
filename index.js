@@ -1,13 +1,22 @@
 function reload_page()
 {
-	window.location.reload();
+    window.location.reload();
+    
 }
+var arr = [""];
+
 function addStore(){
+
+    
+    // retriever();
+
+    console.log(arr);
+
     var trackid = document.getElementById("trackid").value;
     // var cusname = document.getElementById("cusname").value;
     // var cusvehicle = document.getElementById("cusvehicle").value;
     // var status = document.getElementById("status").value;
-	if(trackid == "" || trackid == null){
+	if(trackid == "" || trackid == null || arr.includes(trackid)){
 	window.alert("enter a unique token no.");
 	}
     else{	
@@ -38,3 +47,18 @@ function addStore(){
     });
     }
   }
+
+
+  function retriever(){
+    var rootRef = firebase.database().ref().child("app/customer");
+    rootRef.on("child_added",snap =>{
+        // alert(snap.val());
+        // var name = snap.child("name").val();
+        var tid = snap.child("tid").val();
+        var status = snap.child("stat").val();
+        console.log(tid+" "+status);
+        arr.push(tid);
+        console.log(arr);
+        
+    });
+}
