@@ -8,7 +8,7 @@ function retriever(){
         var tid = snap.child("tid").val();
         var status = snap.child("stat").val();
         console.log(name+" "+tid+" "+status);
-    if(count<24){
+    if(count<31){
         if(status=="END"){
             deleter_three(tid);
         }
